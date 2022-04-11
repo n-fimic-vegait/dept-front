@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
+import { LandingSection } from '../components/organisms/LandingSection'
 
 const Home: NextPage = () => {
-  return <h1> home </h1>
+  return <LandingSection />
 }
 
 export default Home
