@@ -1,0 +1,19 @@
+.filter {
+  display: flex;
+  justify-content: flex-end;
+  padding: 60px;
+}
+
+.filter__form {
+  font-size: 2em;
+  color: #a3a3a3;
+  font-weight: 400;
+}
+
+.filter__form select {
+  font-size: 1em;
+  font-family: Teko;
+  font-weight: 500;
+  border: 0;
+  border-bottom: 2px solid black;
+}

@@ -1,4 +1,4 @@
-import { Header } from '../molecules/Header'
+import { Header } from '../../molecules/Header/Header'
 import styles from './LandingSection.module.css'
 
 export const LandingSection = () => {
