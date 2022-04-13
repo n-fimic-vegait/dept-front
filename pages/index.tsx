@@ -3,6 +3,7 @@ import type { NextPage } from 'next'
 import { ClientLogos } from '../components/molecules/ClientLogos/ClientLogos'
 import { Filter } from '../components/molecules/Filter/Filter'
 import { LandingSection } from '../components/organisms/LandingSection/LandingSection'
+import { QuestionFormSection } from '../components/organisms/QuestionForm/QuestionFormSection'
 import { prepr } from '../lib/prepr'
 import { DeptImage } from '../model/DeptImage'
 import { DeptPost } from '../model/DeptPost'
@@ -39,6 +40,7 @@ const Home: NextPage<HomeProps> = ({ posts, logos }) => {
         ))}
       </div>
       <ClientLogos logos={logos} />
+      <QuestionFormSection />
     </>
   )
 }

@@ -48,8 +48,7 @@
   }
 
   .clientLogos {
-    padding: 0;
-    padding-top: 100px;
+    padding: 100px 0;
   }
 
   .clientLogos__subtitle {

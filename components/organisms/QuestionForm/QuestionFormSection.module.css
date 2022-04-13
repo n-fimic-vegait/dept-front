@@ -1,0 +1,78 @@
+.questionFormSection {
+  display: grid;
+  grid-template-columns: 33% 66%;
+  gap: 75px;
+  padding: 100px 150px;
+}
+
+.questionFormSection__title {
+  font-size: 6em;
+  line-height: 1;
+}
+
+.questionFormSection__formWithoutSubmitButton {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.questionFormSection__form__labelFieldWrapper {
+  width: 50%;
+  height: fit-content;
+  padding: 20px 0;
+}
+
+.questionFormSection__form__labelFieldWrapper__fieldError {
+  color: red;
+  font-family: Roboto;
+  font-size: 1em;
+}
+
+.questionFormSection__form__labelFieldWrapper__field {
+  border: 0;
+  border-bottom: 1px solid #dddddd;
+  width: 90%;
+  font-size: 1.3em;
+  resize: none;
+  margin-bottom: 10px;
+  font-family: Roboto;
+}
+
+.questionFormSection__form label {
+  font-family: Roboto;
+  font-size: 1.3em;
+  font-weight: bold;
+  display: block;
+}
+
+.questionFormSection__form__submitButton {
+  background-color: #1a18f7;
+  color: white;
+  font-size: 1.3em;
+  padding: 20px 50px;
+  border: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .questionFormSection {
+    grid-template-columns: auto;
+    padding: 20px;
+  }
+  .questionFormSection__title {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .questionFormSection__form__labelFieldWrapper {
+    width: 100%;
+  }
+
+  .questionFormSection__formWithoutSubmitButton {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .questionFormSection {
+    padding: 50px;
+  }
+}
