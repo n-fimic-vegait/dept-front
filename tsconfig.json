@@ -20,7 +20,7 @@
     "**/*.ts",
     "**/*.tsx",
     "pages/index.tsx",
-    "lib/prepr.js"
+    "lib/prepr.ts"
   ],
   "exclude": ["node_modules"]
 }

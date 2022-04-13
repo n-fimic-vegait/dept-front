@@ -24,7 +24,7 @@
   grid-template-columns: repeat(4, auto);
   align-items: center;
   justify-content: center;
-  gap: 150px;
+  gap: 50px;
 }
 
 .clientLogos__wrapper__logo {
@@ -33,7 +33,7 @@
 
 @media only screen and (max-width: 992px) {
   .clientLogos__wrapper {
-    gap: 50px;
+    gap: 10px;
   }
 
   .clientLogos__subtitle {
@@ -44,7 +44,6 @@
 @media only screen and (max-width: 768px) {
   .clientLogos__wrapper {
     grid-template-columns: repeat(2, auto);
-    gap: 100px;
   }
 
   .clientLogos {
@@ -53,5 +52,10 @@
 
   .clientLogos__subtitle {
     width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .clientLogos__wrapper__logo:nth-child(n + 7) {
+    display: none;
   }
 }

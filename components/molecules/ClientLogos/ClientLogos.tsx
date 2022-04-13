@@ -19,8 +19,9 @@ export const ClientLogos: FunctionComponent<ClientLogosProps> = ({ logos }) => {
       <div className={styles.clientLogos__wrapper}>
         {logos.map((logo) => (
           <img
-            className={styles.clientLogos__wrapper__logo}
+            width={'100%'}
             key={logo.url}
+            className={styles.clientLogos__wrapper__logo}
             src={logo.url}
             alt={'company logo'}
           />
