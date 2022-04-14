@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  align-items: baseline;
+  padding: 25px 0;
+}
+
+.header__deptLogo {
+  width: 120px;
+}
+
+.header__menuText {
+  margin-right: 20px;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.header__menuIcon {
+  width: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 20px;
+    padding-top: 20px;
+    background-color: white;
+    border: 0;
+  }
+
+  .header__deptLogo {
+    width: 60px;
+  }
+}

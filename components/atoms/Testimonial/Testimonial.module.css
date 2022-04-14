@@ -1,0 +1,21 @@
+.testimonial {
+  border-top: 2px solid #dddddd;
+  padding: 80px 300px 20px 300px;
+}
+
+.testimonial h1 {
+  font-weight: 400;
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .testimonial {
+    padding: 80px 50px 20px 50px;
+  }
+}
+
+@media only screen and (max-width: 821px) {
+  .testimonial {
+    padding: 2px;
+  }
+}

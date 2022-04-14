@@ -1,0 +1,52 @@
+.landingSection {
+  margin: 25px 25px 0 25px;
+  background-image: url('./../../../public/Header.jpg');
+  background-position: right;
+  padding: 0 60px;
+  padding-bottom: 60px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.landingSection__title {
+  font-size: 25em;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 120px;
+}
+
+.landingSection__viewCaseButton {
+  color: white;
+  background-color: #0e0e0e;
+  border: 0;
+  padding: 15px 40px;
+  font-weight: 600;
+  font-size: 1em;
+  align-self: flex-end;
+}
+
+@media only screen and (max-width: 1200px) {
+  .landingSection__title {
+    font-size: 15em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .landingSection {
+    margin: 0;
+    padding: 0;
+  }
+
+  .landingSection__title {
+    font-size: 7em;
+  }
+
+  .landingSection__title {
+    padding: 0px 20px;
+  }
+
+  .landingSection__viewCaseButton {
+    margin: 30px;
+  }
+}

@@ -1,0 +1,145 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer {
+  background-color: #0e0e0e;
+  color: white;
+  padding: 100px;
+  width: 95%;
+  font-weight: 300;
+}
+
+.footer__firstRow {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px solid #3e3e3e;
+  padding-bottom: 20px;
+  margin-bottom: 100px;
+}
+
+.footer__firstRow__deptLogo {
+  justify-self: flex-start;
+}
+
+.footer__firstRow ul {
+  list-style-type: none;
+  display: inline;
+}
+
+.footer__firstRow ul li {
+  display: inline;
+}
+
+.footer__firstRow__menu {
+  flex-grow: 1;
+}
+
+.footer__firstRow__menu {
+  padding-left: 150px;
+}
+
+.footer__firstRow__menu li {
+  margin: 0 20px;
+  font-size: 1.5em;
+}
+
+.footer__firstRow__socialIcons {
+  text-align: right;
+  padding: 0;
+}
+
+.footer__firstRow__socialIcons svg {
+  transform: scale(0.4);
+}
+
+.scrollToTop {
+  flex-grow: 1;
+  text-align: center;
+  color: #1a18f7;
+  font-size: 1.5em;
+}
+
+.scrollToTop:hover {
+  cursor: pointer;
+}
+
+.scrollToTop p {
+  margin: 0;
+}
+
+.footer__secondRow {
+  display: flex;
+  font-family: Roboto;
+  font-weight: 400;
+  color: #808080;
+  padding-left: 320px;
+}
+
+.footer__secondRow span {
+  margin: 0 20px;
+}
+
+.footer__secondRow span:last-child {
+  flex-grow: 1;
+  text-align: right;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1263px) {
+  .footer__firstRow__menu {
+    padding-left: 0;
+  }
+
+  .footer__secondRow {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 1107px) {
+  .footer__secondRow {
+    flex-direction: column;
+  }
+
+  .footer__secondRow span {
+    margin: 5px 20px;
+  }
+
+  .footer__secondRow span:last-child {
+    text-align: left;
+    margin: 0 20px;
+    margin-top: 50px;
+  }
+
+  .scrollToTop,
+  .footer__firstRow__deptLogo {
+    display: none;
+  }
+
+  .footer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 879px) {
+  .footer {
+    padding: 25px;
+  }
+
+  .footer__firstRow ul li {
+    display: block;
+    font-size: 2em;
+  }
+
+  .footer__firstRow {
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
+
+  .footer__firstRow__socialIcons {
+    text-align: center;
+  }
+}

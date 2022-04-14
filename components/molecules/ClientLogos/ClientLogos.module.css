@@ -1,0 +1,61 @@
+.clientLogos {
+  background-color: #f3f6f6;
+  text-align: center;
+  padding: 100px;
+}
+
+.clientLogos__title {
+  font-size: 4em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.clientLogos__subtitle {
+  font-size: 1.5em;
+  font-family: 'Roboto';
+  font-weight: 400;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 150px;
+}
+
+.clientLogos__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.clientLogos__wrapper__logo {
+  justify-self: center;
+}
+
+@media only screen and (max-width: 992px) {
+  .clientLogos__wrapper {
+    gap: 10px;
+  }
+
+  .clientLogos__subtitle {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .clientLogos__wrapper {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .clientLogos {
+    padding: 100px 0;
+  }
+
+  .clientLogos__subtitle {
+    width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .clientLogos__wrapper__logo:nth-child(n + 7) {
+    display: none;
+  }
+}
