@@ -5,17 +5,17 @@ import styles from './ClientLogos.module.css'
 
 interface ClientLogosProps {
   logos: DeptImageModel[]
+  clients_description: string
 }
 
-export const ClientLogos: FunctionComponent<ClientLogosProps> = ({ logos }) => {
+export const ClientLogos: FunctionComponent<ClientLogosProps> = ({
+  logos,
+  clients_description,
+}) => {
   return (
     <div className={styles.clientLogos}>
       <h1 className={styles.clientLogos__title}> CLIENTS </h1>
-      <p className={styles.clientLogos__subtitle}>
-        {`We value a great working relationship with our clients above all else.
-        It’s why they often come to our parties. It’s also why we’re able to
-        challenge and inspire them to reach for the stars.`}
-      </p>
+      <p className={styles.clientLogos__subtitle}>{clients_description}</p>
       <div className={styles.clientLogos__wrapper}>
         {logos.map((logo) => (
           <img

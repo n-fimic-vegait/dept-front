@@ -24,7 +24,18 @@ export const getPageData = () => {
             images {
               url(format: "webp")
             }
+            clients_description
           }
+        },
+        categories : DeptCategories {
+          items {
+            name
+          }        
+        },
+        industries : DeptIndustries {
+          items {
+            name
+          }        
         }
     }`
     )
