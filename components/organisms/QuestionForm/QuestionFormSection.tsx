@@ -18,7 +18,7 @@ export const QuestionFormSection = () => {
         initialValues={
           { name: '', email: '', message: '' } as QuestionFormValues
         }
-        onSubmit={(values) => console.log(values)}
+        onSubmit={(values) => {}}
         validationSchema={questionFormSchema}
       >
         {({ errors, touched }) => (
