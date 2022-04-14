@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import { FunctionComponent } from 'react'
-import { DeptImage } from '../../../model/DeptImage'
+import { DeptImageModel } from '../../../model/DeptImageModel'
 import styles from './ClientLogos.module.css'
 
 interface ClientLogosProps {
-  logos: DeptImage[]
+  logos: DeptImageModel[]
 }
 
 export const ClientLogos: FunctionComponent<ClientLogosProps> = ({ logos }) => {
